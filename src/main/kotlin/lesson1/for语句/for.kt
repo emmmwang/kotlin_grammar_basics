@@ -1,4 +1,4 @@
-package for语句
+package lesson1.for语句
 
 fun main() {
     //使用..表示范围
