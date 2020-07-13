@@ -3,7 +3,16 @@ package lesson1.构造函数
 import java.awt.Color
 
 fun main() {
-    var bz= Car("奔驰", "红色")
+    var zs= Student("张三")
+    println(zs.name)
+    println(zs.wife)
+
+    //带参数的名字
+    //想给哪个参数赋值就在括号内写哪个参数
+    var emm=Student(wife="rose")
+}
+
+class Student(var name:String,var wife:String=""){
 
 }
 
