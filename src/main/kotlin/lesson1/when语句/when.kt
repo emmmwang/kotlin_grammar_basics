@@ -1,4 +1,4 @@
-package when语句
+package lesson1.when语句
 
 fun main() {
     var num=11
