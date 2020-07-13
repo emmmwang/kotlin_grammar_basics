@@ -1,7 +1,7 @@
 package when语句
 
 fun main() {
-    var num=20
+    var num=11
 
     //更简洁
     when(num){
@@ -12,12 +12,20 @@ fun main() {
     }
 
     //更灵活
-     val result=when(num){
-                in 1..10-> println("z")
-                in 11..59-> println("E")
-                in 60..79-> println("f")
-                else-> println("没有成绩")
-            }
+     when(num){
+        in 1..10-> println("z")
+        in 11..59-> println("E")
+        in 60..79-> println("f")
+        else-> println("没有成绩")
+    }
 
-    println("result is $result ")
+    //更方便
+    val result=when(num) {
+        10->"a"
+        11->"b"
+        12->"c"
+        else->"其他"
+    }
+    println("result is $result")
+
 }
