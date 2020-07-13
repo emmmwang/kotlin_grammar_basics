@@ -1,4 +1,4 @@
-package 多态
+package lesson1.多态
 
 open class Animal(){
     open fun sleep(){
@@ -21,13 +21,13 @@ interface OnClickListener{
     fun onClick()
 }
 
-class Button:OnClickListener {
+class Button: OnClickListener {
     override fun onClick() {
         println("按钮被点击了")
     }
 }
 
-class Image:OnClickListener {
+class Image: OnClickListener {
     override fun onClick() {
         println("图片被点击了")
     }
@@ -39,8 +39,8 @@ fun test(listener: OnClickListener){
 }
 
 fun main() {
-    val an=Animal()
-    var dg=Dog()
+    val an= Animal()
+    var dg= Dog()
 
     whereToSleep(dg)
 
