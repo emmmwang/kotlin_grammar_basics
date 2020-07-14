@@ -14,7 +14,7 @@ class Activity{
         println("显示下载的数据：$data")
     }
 
-    //延迟加载
+    //延迟加载（lateinit)
     //这个变量必须在某个时候初始化
     lateinit var imgData:String
 }
