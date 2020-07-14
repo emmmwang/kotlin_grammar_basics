@@ -1,4 +1,4 @@
-package 函数
+package lesson1.函数
 
 //Unit==void
 fun buy(money:Int):Unit{
@@ -57,8 +57,8 @@ fun showView(){
 
 
 fun main() {
-    work(8888,"emmm")
-    work(name="jack")
-    add(1,2,3,4)
+    work(8888, "emmm")
+    work(name = "jack")
+    add(1, 2, 3, 4)
     showView()
 }
