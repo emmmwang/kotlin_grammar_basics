@@ -1,6 +1,6 @@
 package lesson1.if条件语句
 
-import kotlin和Java的区别.MyClass
+import MyClass
 
 fun main() {
     //问号表达式2>1? a:b
