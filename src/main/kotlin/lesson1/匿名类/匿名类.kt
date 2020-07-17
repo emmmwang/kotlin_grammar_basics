@@ -1,4 +1,4 @@
-package 匿名类
+package lesson1.匿名类
 
 //接口->统一接口
 //接口里面的函数默认是接口，默认是可以被继承的
@@ -7,12 +7,12 @@ interface  OnTouchListener{
     fun OnTouchEvent(type :String)
 }
 
-fun didTouch(listener:OnTouchListener){
+fun didTouch(listener: OnTouchListener){
     listener.OnTouchEvent("手指按下")
 }
 
 //方法1.定义类实现接口-> 实例化这个实现类
-class ButtonListener:OnTouchListener{
+class ButtonListener: OnTouchListener {
     override fun OnTouchEvent(type: String) {
         println("接收事件为： $type")
     }
@@ -26,7 +26,7 @@ fun main() {
      //ButtonListener().also { didTouch(it)
 
     //匿名类的方式实现(放在类的外部的）
-    didTouch(object :OnTouchListener {
+    didTouch(object : OnTouchListener {
         override fun OnTouchEvent(type: String) {
             println("接收事件为： $type")
         }
@@ -35,7 +35,7 @@ fun main() {
 
 class QQQ{
     fun show(){
-        dispatchTouch(object :OnTouchListener{
+        dispatchTouch(object : OnTouchListener {
             override fun OnTouchEvent(type: String) {
                 println("接收事件为： $type")
             }
@@ -45,7 +45,7 @@ class QQQ{
         listener.OnTouchEvent("手指在滑动")
     }
 
-    class XXX :OnTouchListener{
+    class XXX : OnTouchListener {
         override fun OnTouchEvent(type: String){
             println("接收事件为： $type")
         }
